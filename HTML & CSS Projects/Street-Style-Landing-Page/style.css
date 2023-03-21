@@ -1,0 +1,191 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Orbitron";
+}
+
+.container {
+  width: 85vw;
+  height: 100vh;
+  margin: 0 auto;
+}
+
+/* Navbar Style */
+
+.navbar-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: 15vh;
+}
+
+.navbar-container .list {
+  display: flex;
+  list-style-type: none;
+}
+
+.navbar-container .list-item {
+  margin: 1em;
+  font-weight: 500;
+}
+
+.navbar-container .list .list-item:first-child {
+  font-weight: 900;
+}
+
+.navbar-container .list li:first-child::after {
+  content: "";
+  display: block;
+  position: relative;
+  width: 60%;
+  margin: 0 auto 0 auto;
+  border: 1px solid #000;
+  background-color: #000;
+}
+
+.navbar-container img {
+  height: 40px;
+}
+
+.navbar-container .button-group {
+  display: flex;
+}
+
+.button-group .search-icon svg {
+  height: 20px;
+  margin: 5px 3px 0 0;
+}
+
+.button-group .nav-button {
+  background: transparent;
+  padding: 4px 35px;
+  border-radius: 10px;
+  color: #434141;
+  font-size: 18px;
+  font-weight: 400;
+  border: 2px solid #000;
+}
+
+/* End of Navbar style */
+
+/*  */
+
+.hero-container {
+  display: flex;
+  flex-direction: row;
+  overflow: hidden;
+}
+
+.hero img {
+  position: absolute;
+  left: 7%;
+  top: 20%;
+  height: 450px;
+}
+
+.square img {
+  position: absolute;
+  left: 17%;
+  top: 51%;
+  height: 300px;
+}
+
+.globe img {
+  position: absolute;
+  left: 51%;
+  height: 3em;
+}
+
+.star img {
+  position: absolute;
+  right: 9%;
+  top: 23%;
+  height: 3em;
+}
+
+.star2 img {
+  position: absolute;
+  left: 45%;
+  bottom: 7%;
+  height: 2.5em;
+}
+
+.hero-container-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  right: 4%;
+  top: 40%;
+  width: 55%;
+}
+
+.hero-container-right .hero-heading {
+  position: absolute;
+  top: -7vh;
+  font-size: 48px;
+  font-weight: 700;
+}
+
+.hero-container-right .hero-description {
+  position: absolute;
+  top: 4em;
+  font-size: 12px;
+  font-weight: 400;
+  color: #5b5b5b;
+  font-family: "Poppins";
+  padding: 0 8em;
+  text-align: center;
+}
+
+.hero-container-right .button-right {
+  position: absolute;
+  top: 25vh;
+}
+
+.button-right .button-email {
+  background: transparent;
+  padding: 0.2em 2em;
+  border-radius: 0.5em;
+  font-size: 1em;
+  font-family: "Orbitron";
+  color: #535353;
+  font-weight: 500;
+  margin: 0 1em 0 0;
+}
+
+.button-right .button-join {
+  background: transparent;
+  padding: 0.2em 0.2em;
+  border: none;
+  border-radius: 0.3em;
+  background-color: #000;
+  color: #fff;
+  font-size: 1em;
+  font-family: "Orbitron";
+}
+
+.hero-container-right .contact-icons {
+  position: absolute;
+  top: 18em;
+  text-align: center;
+}
+
+.contact-icons .contact-heading {
+  color: #5b5b5b;
+  font-family: "Poppins";
+  font-weight: 500;
+}
+
+.contact-icons .icons img {
+  height: 1.5em;
+  margin: 1em 0 0 1em;
+}
+
+/*  */

@@ -1,0 +1,92 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #2b2922;
+  width: 100vw;
+  height: 100vh;
+}
+
+.navbar {
+  display: flex;
+  flex-direction: row;
+  width: 80vw;
+  margin: 0 auto;
+  align-items: center;
+  padding: 1em 0;
+}
+
+.navbar .brand-logo {
+  flex: 1;
+  margin: auto;
+}
+
+.navbar .logo {
+  display: block;
+  height: 40px;
+  cursor: pointer;
+}
+
+.navbar .list {
+  display: flex;
+  flex: 2;
+}
+
+.navbar .list-item {
+  list-style-type: none;
+  margin: 1.6em;
+  cursor: pointer;
+  color: #a7a7a7;
+  font-family: "Red Rose";
+}
+
+.navbar .list-item:first-child {
+  color: #fff;
+}
+
+.navbar .nav-button {
+  background: transparent;
+  padding: 0.8em 1.8em;
+  color: #958534;
+  border: 1.5px solid #958534;
+  border-radius: 0.5em;
+  font-family: "Red Rose";
+  font-weight: 600;
+}
+
+.hero {
+  display: flex;
+  flex-direction: row;
+  width: 80vw;
+  margin: 0 auto;
+}
+
+.hero .hero-heading-left {
+  color: #fff;
+  width: 50vw;
+  font-size: 3.5em;
+  font-family: "Red Rose";
+  font-weight: 700;
+  margin: 0.7em 0 0 0;
+}
+
+.hero .hero-heading-right {
+  color: #a7a7a7;
+  width: 50vw;
+  font-size: 1em;
+  font-family: "Red Rose";
+  padding:0 7em;
+  margin: 4em 0 0 0;
+  text-align: start;
+  line-height: 1.5em;
+}
+
+.hero-bottom img {
+  position: absolute;
+  bottom: 0;
+  height: 40vh;
+  width: 100vw;
+}

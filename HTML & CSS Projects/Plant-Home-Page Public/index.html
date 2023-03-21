@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link href="https://fonts.googleapis.com/css?family=Allerta" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css?family=Abel" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&display=swap" rel="stylesheet" />
+  <style>
+    /* Write styles here */
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background-color: #f4f3f8;
+    }
+
+    #navbarMonstera {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      width: 90vw;
+      height: 15vh;
+      margin: 0 auto;
+    }
+
+    #navbarMonstera #navMid {
+      display: flex;
+      flex-direction: row;
+    }
+
+    #navMid div h4 {
+      margin: 0 2.5em 0 2.5em;
+      font-family: "Montserrat";
+    }
+
+    #navMid ::after {
+      content: "";
+      width: 50px;
+      height: 1px;
+      position: absolute;
+      background-color: #000000;
+      left: 24.5vw;
+      top: 9vh;
+    }
+
+    #navbarMonstera #navEnd {
+      display: flex;
+      flex-direction: row;
+    }
+
+    #navEnd div img {
+      margin: 0 1em 0 1em;
+    }
+
+    #midWhole {
+      height: 85vh;
+    }
+
+    #midWhole #imgMain {
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      height: 80vh;
+    }
+
+    #midWholePart1 {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: center;
+      position: absolute;
+      top: 35vh;
+      left: 5vw;
+    }
+
+    #monstera::before {
+      content: "◉";
+      font-size: 15px;
+      position: absolute;
+      left: -20px;
+      top: 30px;
+      font-size: 13px;
+    }
+
+    #midWholePart11 #monstera {
+      font-size: 6em;
+      font-family: "Montserrat";
+      width: fit-content;
+      letter-spacing: 5px;
+      line-height: 0.5;
+      font-weight: 700;
+      color: #000;
+      list-style-type: none;
+    }
+
+    #midWholePart11 ul li:first-child {
+      list-style-type: none;
+    }
+
+    ::marker {
+      font-size: 1.2em;
+    }
+
+    #midWholePart11 ul li {
+      padding: 0 0 0 1em;
+    }
+
+    #midWholePart11 ul li {
+      font-family: "Allerta";
+      font-size: 1em;
+      width: 40vw;
+      color: #2f2f2f;
+    }
+
+    #midWholePart12 #midWholePart121 {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      position: absolute;
+      top: 15em;
+      padding: 0.7em 2.5em;
+      border-radius: 2em;
+      background-color: #466d50;
+    }
+
+    #midWholePart12 #midWholePart121,
+    h2 {
+      font-family: "Abel";
+      font-size: 0.8em;
+      color: #fff;
+      letter-spacing: 2px;
+    }
+
+    #midWholePart122 img {
+      margin: 0.3em 0 0 1em;
+      height: 1.2em;
+    }
+
+    #midWholePart13 {
+      display: flex;
+      align-items: center;
+      position: absolute;
+      top: 20em;
+    }
+
+    .midWholePart13Parts {
+      display: flex;
+      align-items: center;
+      width: 23vw;
+    }
+
+    #feeding {
+      height: 4em;
+    }
+
+    #light {
+      height: 3.1em;
+    }
+
+    #care {
+      height: 3em;
+    }
+
+    .midWholePart13Parts div,
+    h4 {
+      margin: 0 1em 0 0;
+    }
+  </style>
+</head>
+
+<body>
+  <nav id="navbarMonstera">
+    <div id="navFirst">
+      <img src="./photos/Logo.svg" />
+    </div>
+
+    <div id="navMid">
+      <div>
+        <h4>Home</h4>
+      </div>
+      <div>
+        <h4>Collection</h4>
+      </div>
+      <div>
+        <h4>Shop</h4>
+      </div>
+      <div>
+        <h4>About</h4>
+      </div>
+      <div>
+        <h4>Contact</h4>
+      </div>
+    </div>
+
+    <div id="navEnd">
+      <div>
+        <img src="./photos/cart.svg" />
+      </div>
+      <div>
+        <img src="./photos/user.svg" />
+      </div>
+      <div>
+        <img src="./photos/search.svg" />
+      </div>
+    </div>
+  </nav>
+
+  <div id="midWhole">
+    <div id="midWholePart1">
+      <div id="midWholePart11">
+        <div>
+          <ul>
+            <li>
+              <h1 id="monstera">MONSTERA</h1>
+            </li>
+            <li></li>
+            <li>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</li>
+            <li>
+              Morbi justo metus, euismod quis lorem ornare, convallis
+              sollicitudin neque.
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div id="midWholePart12">
+        <div id="midWholePart121">
+          <div>
+            <h1>DISCOVER</h1>
+          </div>
+          <div id="midWholePart122">
+            <img src="./photos/greaterThan.svg" />
+          </div>
+        </div>
+      </div>
+      <div id="midWholePart13">
+        <div class="midWholePart13Parts">
+          <div>
+            <img id="feeding" src="./photos/water plant.png" />
+          </div>
+          <div>
+            <h4>Feeding</h4>
+            <p class="text">
+              Lorem ipsum dolor sit amet, consecteturadipisicing elit
+            </p>
+          </div>
+        </div>
+        <div class="midWholePart13Parts">
+          <div>
+            <img id="light" src="./photos/light.svg" alt="" />
+          </div>
+          <div>
+            <h4>Light</h4>
+            <p class="text">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit
+            </p>
+          </div>
+        </div>
+        <div class="midWholePart13Parts">
+          <div>
+            <img id="care" src="./photos/plough.svg" />
+          </div>
+          <div>
+            <h4>Care</h4>
+            <p class="text">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div>
+      <img id="imgMain" src="./photos/6_folwer_cut.png" />
+    </div>
+  </div>
+</body>
+
+</html>

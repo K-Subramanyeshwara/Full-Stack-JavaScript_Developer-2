@@ -1,0 +1,220 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700;900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: none;
+    box-sizing: border-box;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.content-left {
+    background: url(../images/pexels-rfstudio-3819572.jpg);
+    background-size: 100% 100%;
+    background-size: cover;
+    width: 40%;
+    height: 100vh;
+}
+
+.logo {
+    position: relative;
+    left: 7vw;
+    top: 8vh;
+    height: 5vh;
+}
+
+/*  */
+
+.content-right {
+    width: 70%;
+    background-color: #f5f2f0;
+}
+
+.navbar {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 10vh;
+}
+
+.items {
+    display: flex;
+}
+
+.items::before {
+    content: "";
+    background-color: #000;
+    display: block;
+    position: relative;
+    top: 2vh;
+    right: 2vw;
+    width: 18vw;
+    height: 2px;
+}
+
+.item {
+    list-style-type: none;
+    margin: 0 4em 0 0;
+    font-family: "Poppins", sans-serif;
+}
+
+/* hero-top styles */
+
+.hero-top {
+    display: flex;
+    justify-content: space-around;
+}
+
+.hero-top-text {
+    display: flex;
+}
+
+.hero-top-text h1 {
+    position: relative;
+    left: 3vw;
+    font-size: 6em;
+    font-family: "Merriweather", sans-serif;
+    color: transparent;
+    -webkit-text-stroke: 1px #333333;
+}
+
+.hero-top-text span {
+    position: relative;
+    left: 9vw;
+    color: #333333;
+}
+
+.hero-top-text p {
+    position: relative;
+    top: 23vh;
+    left: 13vw;
+    font-size: 2em;
+    color: #828282;
+}
+
+.hero-top button {
+    width: 22vw;
+    height: 8vh;
+    background-color: #333333;
+    color: #fff;
+    position: relative;
+    top: 37vh;
+    left: .2vw;
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    border: none;
+}
+
+.social {
+    list-style-type: none;
+}
+
+.social img {
+    position: relative;
+    right: 4vw;
+    top: 6vh;
+    margin: 0 0 2em 0;
+    height: 1em;
+}
+
+/* end of hero-top styles */
+
+
+/* hero-bottom styles */
+
+.hero-bottom {
+    display: flex;
+    gap: 8vw;
+}
+
+/* hero-bottom-part1 */
+
+.hero-bottom-part1 {
+    position: relative;
+    left: 4vw;
+    top: 7vh;
+}
+
+.hero-bottom-part1 ul::before {
+    content: "";
+    background-color: #333333;
+    display: block;
+    position: absolute;
+    top: 3vh;
+    right: 11vw;
+    width: 2px;
+    height: 37vh;
+}
+
+::marker {
+    font-size: 1.5em;
+}
+
+.hero-bottom-part1 li {
+    margin: 0 0 1.5em 0;
+    font-size: 1em;
+    font-family: "Poppins", sans-serif;
+    color: #333333;
+}
+
+.hero-bottom-part1 .active {
+    color: #000;
+    font-size: 1.2em;
+    position: relative;
+    left: .1vw;
+}
+
+/* end of hero-bottom-part1 styles*/
+
+/* hero-bottom-part2 */
+
+.hero-bottom-part2 {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    bottom: 0;
+    right: 10vw;
+}
+
+.hero-bottom-part2 img {
+    height: 28vh;
+    width: 30vw;
+    object-fit: cover;
+}
+
+.hero-bottom-part2 h1 {
+    font-family: "Merriweather", sans-serif;
+    font-size: 5em;
+    color: #333333;
+    position: relative;
+    top: 5vh;
+    font-weight: 300;
+}
+
+.hero-bottom-part2 h2 {
+    font-family: "Poppins", sans-serif;
+    font-size: 1em;
+    color: #333333;
+    font-weight: 500;
+    margin: 0 0 1em 0;
+}
+
+/* end of hero-bottom-part2 */
+
+/* hero-bottom-part3 */
+
+.hero-bottom-part3 img{
+    position: absolute;
+    right: 1vw;
+    bottom: 2vh;
+    height: 10vh;
+}
+
+/* end of hero-bottom-part3 */
+
+/* end of hero-bottom styels */
