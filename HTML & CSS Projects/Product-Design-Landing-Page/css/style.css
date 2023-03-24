@@ -1,0 +1,414 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #111;
+    font-family: "Poppins", sans-serif;
+}
+
+/* Navbar styles */
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    height: 10vh;
+    align-items: center;
+}
+
+.navbar img {
+    height: 5vh;
+    position: relative;
+    left: 5vw;
+    cursor: pointer;
+}
+
+.items {
+    display: flex;
+    position: relative;
+    right: 15vw;
+}
+
+.item {
+    list-style-type: none;
+    color: #bcbcbc;
+    margin: 0 2em;
+    font-size: .9em;
+    text-transform: uppercase;
+    font-family: "Roboto", sans-serif;
+    cursor: pointer;
+}
+
+/* end of navbar styles */
+
+/* hero section styels */
+
+.hero {
+    display: flex;
+    width: 90%;
+    margin: auto;
+}
+
+.hero-left img {
+    height: 89vh;
+}
+
+.hero-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.hero-right h2 {
+    color: #c91b28;
+}
+
+.hero-right h1 {
+    color: #fff;
+    font-size: 3em;
+}
+
+.hero-right p {
+    color: #bcbcbc;
+    font-size: .9em;
+}
+
+.hero-right button {
+    width: 9em;
+    height: 3em;
+    position: relative;
+    top: 3vh;
+    background-color: #c91b28;
+    border: none;
+    color: #fff;
+    font-size: 1em;
+    text-transform: uppercase;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+/* end of hero section styels */
+
+
+/* hero-one style*/
+
+.hero-one::before {
+    content: "";
+    background-color: #181818;
+    width: 50%;
+    height: 130vh;
+    position: absolute;
+    z-index: -1;
+}
+
+.hero-one {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: auto;
+}
+
+/* services styels */
+
+.services {
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    gap: 1em;
+    margin: 5em auto 0 auto;
+}
+
+.service-card {
+    display: flex;
+    flex-direction: column;
+    background-color: #1E1E1E;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 2em 0 2em 3.5em;
+    width: 30%;
+}
+
+.service-card img {
+    height: 8vh;
+}
+
+.service-card h1 {
+    color: #fcfcfc;
+    margin: .5em 0;
+    font-size: 1.5em;
+    text-transform: uppercase;
+}
+
+.service-card p {
+    margin: 0 0 1em 0;
+    font-size: 1.2em;
+    color: #fcfcfc;
+}
+
+.service-card span {
+    color: #c91b28;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.service-card:nth-child(2) {
+    background-color: #c91b28;
+    color: #fcfcfc;
+}
+
+.service-card:nth-child(2) span {
+    color: #fcfcfc;
+}
+
+/* end of services styels */
+
+/* experience style */
+
+
+.experience {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    margin: 5em auto 0 auto;
+}
+
+.experience-left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 32%;
+    margin: auto;
+}
+
+.experience-left h1 {
+    color: #c91b28;
+    font-size: 5em;
+}
+
+.experience-left h3 {
+    color: #fcfcfc;
+}
+
+.experience-right {
+    display: flex;
+    flex-wrap: wrap;
+    width: 68%;
+    position: relative;
+    margin: 0 1em 0 0;
+}
+
+.experience-right-card {
+    background-color: #1e1e1e;
+    width: 45%;
+    text-align: center;
+    padding: 1em;
+    margin: 1em 1em 0 0;
+}
+
+.experience-right-card h1 {
+    color: #c91b28;
+    font-size: 3em;
+}
+
+
+.experience-right-card h3 {
+    color: #bcbcbc;
+    font-weight: 400;
+}
+
+/* end of experience style */
+
+/* end of hero-one style */
+
+
+/* project styles */
+
+.project {
+    position: relative;
+    top: 20vh;
+}
+
+.project-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 70%;
+    margin: auto;
+}
+
+
+.project-header-left h1 {
+    text-transform: uppercase;
+    color: #fcfcfc;
+    font-size: 1.8em;
+}
+
+.project-header-left p {
+    color: #fcfcfc;
+    font-size: .8em;
+}
+
+.project-header-right button {
+    width: 10em;
+    height: 3em;
+    background-color: #c91b28;
+    border: none;
+    color: #fff;
+    font-size: .8em;
+    text-transform: uppercase;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.project-cards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    position: relative;
+    top: 5vh;
+    left: 2vw;
+    width: 75%;
+    margin: auto;
+}
+
+.project-card {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin: 0 0 2em 0;
+}
+
+
+.project-card img {
+    height: 50vh;
+    width: 90%;
+    background-color: #1e1e1e;
+    padding: 3em 1.5em;
+}
+
+.project-card h1 {
+    margin: 1em 0 0 0;
+    color: #fcfcfc;
+}
+
+.project-card p {
+    color: #c91b28;
+}
+
+/*  */
+
+
+/* work styles */
+
+.work {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    top: 30vh;
+    width: 70%;
+    margin: auto;
+    background-color: #1e1e1e;
+    padding: 3em 2em;
+}
+
+.work-left h1 {
+    color: #fcfcfc;
+    font-size: 2.5em;
+}
+
+.work-left p {
+    color: #bcbcbc;
+    font-size: .8em;
+}
+
+
+.work-right button {
+    position: relative;
+    right: 5vw;
+    width: 9em;
+    height: 3em;
+    background-color: #c91b28;
+    border: none;
+    color: #fff;
+    font-size: 1em;
+    text-transform: uppercase;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+/* end of work styles */
+
+/* nav styles */
+
+.nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 35vh;
+    width: 80%;
+    margin: auto;
+}
+
+.nav ul {
+    display: flex;
+}
+
+.nav ul li {
+    list-style-type: none;
+    color: #bcbcbc;
+    margin: 0 2em 2em 2em;
+    text-transform: uppercase;
+    font-size: .8em;
+}
+
+
+/* end of nav styles */
+
+/* footer styles */
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    margin: auto;
+    top: 35vh;
+    width: 100%;
+    background-color: #1e1e1e;
+    padding: 1em;
+}
+
+.footer-left{
+    width: 40%;
+}
+
+.footer-left img{
+    height: 5vh;
+    margin: 0 0 0 15vw;
+}
+
+.footer-right{
+    width: 60%;
+}
+
+.footer-right ul{
+    display: flex;
+}
+
+.footer-right ul li {
+    list-style: none;
+    color: #fff;
+    margin: 0 1em;
+}
+
+/* end of footer styles */
