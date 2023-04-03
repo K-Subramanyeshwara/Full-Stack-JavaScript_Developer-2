@@ -1,3 +1,20 @@
+/**
+ *? What is Function?
+ * 
+ * Function is a grouping commenly or repeatedly done task together  
+ * Set of statements that takes input, do some task and produces output
+ * We can call the function instead of writing same code again and again
+ * 
+ * 
+ * 
+ *  
+ * 
+ * 
+ * 
+ * 
+ * 
+*/
+
 function sum() {
     let num1 = 26;
     let num2 = 24;

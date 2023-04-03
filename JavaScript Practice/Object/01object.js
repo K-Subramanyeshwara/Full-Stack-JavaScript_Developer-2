@@ -1,5 +1,4 @@
 //Creating aand initializing a object
-
 let employeeDetails = {
     id: 101,
     firstName: "K",
@@ -10,8 +9,10 @@ let employeeDetails = {
 console.log(employeeDetails);
 console.log();
 
+
 //creating empty object using Object keyword
-let emptyObject = new Object();
+// let user = {};  // "object literal" syntax
+let emptyObject = new Object(); // "object constructor" syntax
 emptyObject.id = 102;
 emptyObject.firstName = "Ramya";
 emptyObject.lastName = "Agin";
@@ -44,7 +45,7 @@ console.log(employeeDetails['firstName']);
 console.log(employeeDetails['lastName']);
 console.log();
 
-//adding value to a object using dot(.) operator
+//adding new value to a object using dot(.) operator
 emptyObject.location = "Kerala";
 console.log(emptyObject);
 console.log();
@@ -63,4 +64,5 @@ console.log();
 employeeDetails['location'] = "Mumbai";
 console.log(employeeDetails);
 console.log();
+
 
