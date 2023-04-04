@@ -36,7 +36,7 @@ body{
     display: flex;
     flex-direction: row;
     background-color: #000;
-    height: 700px;
+    height: 140vh;
 }
 
 .heroLeft{
@@ -115,3 +115,22 @@ i {
     top: -7%;
     left: 66%;
 }
+/* end of hero section */
+
+/* logo section */
+
+.logo-section{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: #222222;
+    height: 20vh;
+}
+
+.logo-section img{
+    height: 70px;
+    padding: 15px 45px;
+}
+
+/* end of logo section */
