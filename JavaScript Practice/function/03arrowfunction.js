@@ -1,7 +1,17 @@
-//initializing Arrow Function
+//Normal function
+let show = function () {
+    console.log('Anonymous function');
+};
+show();
+let show1 = () => console.log('Anonymous function');
+console.log();
 
+//initializing Arrow Function
 // one parameter and single return statement
 const square = (x) => x * x;
+//calling arrow function
+console.log(square(5));
+console.log();
 
 //Multiple parameter and a single return expression
 const sumOfTwoNumbers = (x, y) => x + y;
@@ -11,10 +21,5 @@ const multi = (x, y) => {
     console.log(`Multiplying ${x} and ${y}`);
     return x * y;
 }
-
-//calling arrow function
-let output = square(5);
-console.log(output);
-
 let Multiplication = multi(2, 5);
-console.log(Multiplication);
+console.log("Multiple statement arrow function",Multiplication);

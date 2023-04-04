@@ -5,22 +5,27 @@
  * Set of statements that takes input, do some task and produces output
  * We can call the function instead of writing same code again and again
  * 
+ *? Syantax
+ * function functionName(parameters){
+ *      // function body
+ *      //
+ * }
  * 
+ *? Parameters
+ * Parameters are specified while declaring a function
+ * When you pass an object as a parameter, if the function changes the object's properties, that change is visible outside the function
  * 
+ *? Arguments 
+ * Arguments are passed while calling a function
  *  
- * 
- * 
- * 
- * 
- * 
 */
 
-function sum() {
-    let num1 = 26;
-    let num2 = 24;
-    console.log("Addition of 2 numbers are :", num1+num2);
+// declaring a function without parameters
+function greet() {
+    console.log("Namaste..!");
 }
-sum();
+//Calling a function
+greet();
 
 //passing values through parameters
 function Hello(name) {
@@ -37,7 +42,7 @@ function multi(val1, val2) {
 multi(23,24);
 multi(10,12);
 
-
+//function using string
 function URL(url,domain) {
     let http = 'https://'
     let result = http + url + domain;
@@ -49,6 +54,16 @@ let mySite = URL('ksubramanyeshwara', '.me');
 console.log(mySite);
 
 
+//Function expressions 
+//functions can also be created by a function expression.
+const square = function (number) {
+  return number * number;
+};
+const x = square(4);
+console.log(x);
+console.log();
+
+//function with n numbers of parameters
 function addition(array) {
     let sum = 0;
     for (let i = 0; i < array.length; i++) {
@@ -57,12 +72,13 @@ function addition(array) {
     }
     return sum;
 }
-
 let sumArray = [1, 2, 3, 4, 5];
 let sumArrResult = addition(sumArray);
 console.log(sumArrResult);
+console.log();
 
-
+//Accessing a parameters without passing it
+//arguments is used to get the value without declaring a parameter
 function add(){
     let sum = 0;
     for (let i = 0; i < arguments.length; i++) {
@@ -70,6 +86,5 @@ function add(){
     }
     return sum;
 }
-
 let result = add(1, 2, 3, 4, 5, 6);
 console.log(result);
