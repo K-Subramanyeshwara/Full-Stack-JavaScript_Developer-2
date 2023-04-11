@@ -7,8 +7,9 @@
  * 
  *? Syantax
  * function functionName(parameters){
- *      // function body
- *      //
+ *      function body
+ *      ...
+ *      ...
  * }
  * 
  *? Parameters
@@ -32,7 +33,7 @@ function Hello(name) {
     console.log(`Hello ${name}, How are you doing?`);
 }
 
-Hello("K Subramanyeshwara")
+Hello("K Subramanyeshwara") //Argument
 
 function multi(val1, val2) {
     let val3 = val1 * val2;
@@ -41,18 +42,6 @@ function multi(val1, val2) {
 
 multi(23,24);
 multi(10,12);
-
-//function using string
-function URL(url,domain) {
-    let http = 'https://'
-    let result = http + url + domain;
-    return result;
-}
-
-console.log(URL('ksubramanyeshwara', '.me'));
-let mySite = URL('ksubramanyeshwara', '.me');
-console.log(mySite);
-
 
 //Function expressions 
 //functions can also be created by a function expression.

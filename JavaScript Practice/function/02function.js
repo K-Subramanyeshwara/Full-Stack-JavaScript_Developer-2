@@ -1,6 +1,6 @@
 // No need to specify the data type for parameters in JavaScript function definitions
 // When we are passing parameters, value will be assigned from left to right
-// Default parameters must come from right to left
+// Default parameters value must come from right to left
 
 function sub(x, y = 10) {
     return x - y;
@@ -24,22 +24,15 @@ console.log();
 
 
 //Passing a function to another function
-function add(a,b) {
-    return a + b;
-}
-function avaerage(a, b, c) {
-    return c = a + b / 2;
-}
+
 //function add is paased as argument to another function
-let results = avaerage(10, 20, add);
-console.log("Average of 2 numbers", results);
 console.log();
 
 
 //anonymous function - function without a name
 /*
 (function () {
-   //...
+   .....
 });
 */
 
