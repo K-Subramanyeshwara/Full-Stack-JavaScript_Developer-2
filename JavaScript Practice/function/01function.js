@@ -35,15 +35,35 @@ function Hello(name) {
 
 Hello("K Subramanyeshwara") //Argument
 
+//passing multiple values through multiple parameter
 function multi(val1, val2) {
     let val3 = val1 * val2;
     console.log("Multiplication of 2 numbers are", val3);
 }
 
 multi(23,24);
-multi(10,12);
+multi(10, 12);
 
-//Function expressions 
+// No need to specify the data type for parameters in JavaScript function definitions
+// When we are passing parameters, value will be assigned from left to right
+// Default parameters value must come from right to left
+
+function sub(x, y = 10) {
+    return x - y;
+}
+console.log("Default parameter:",sub(12));
+//default parameter will be overriden if we provide value to default parameter 
+console.log("Default parameter overrriden:",sub(22,12));
+console.log();
+
+//returning a value
+function multiplication(a, b, c) {
+    let mul = a * b * c;
+    return mul;
+}
+let mul = multiplication(2, 4, 7);
+console.log("Sum of three numbers:",mul);
+
 //functions can also be created by a function expression.
 const square = function (number) {
   return number * number;

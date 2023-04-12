@@ -1,14 +1,3 @@
-// No need to specify the data type for parameters in JavaScript function definitions
-// When we are passing parameters, value will be assigned from left to right
-// Default parameters value must come from right to left
-
-function sub(x, y = 10) {
-    return x - y;
-}
-console.log("Default parameter:",sub(12));
-//default parameter will be overriden if we provide value to default parameter 
-console.log("Default parameter overrriden:",sub(22,12));
-console.log();
 
 
 // Storing functions in variables. In this we can have two ways to execute the same function
