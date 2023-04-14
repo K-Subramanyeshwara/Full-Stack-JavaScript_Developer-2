@@ -86,8 +86,7 @@ let sumArrResult = addition(sumArray);
 console.log(sumArrResult);
 console.log();
 
-//Accessing a parameters without passing it
-//arguments is used to get the value without declaring a parameter
+//Accessing a parameters without passing it through argument object
 function add(){
     let sum = 0;
     for (let i = 0; i < arguments.length; i++) {

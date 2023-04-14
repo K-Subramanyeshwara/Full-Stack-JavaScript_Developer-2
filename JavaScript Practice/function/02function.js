@@ -1,4 +1,14 @@
+//nested functions
+function outer(x) {
+    function inner(y) {
+        return x + y;
+    }
+    return inner;
+}
 
+let addition = outer(5);
+console.log(addition(3));
+console.log();
 
 // Storing functions in variables. In this we can have two ways to execute the same function
 function add(val1, val2) {
@@ -13,8 +23,18 @@ console.log();
 
 
 //Passing a function to another function
+function add(a, b) {
+    return a + b;
+}
 
-//function add is paased as argument to another function
+let summ = add;
+
+function average(a, b, fn) {
+    return fn(a, b) / 2;
+}
+
+let resultt = average(10, 20, summ);
+console.log(resultt);
 console.log();
 
 
