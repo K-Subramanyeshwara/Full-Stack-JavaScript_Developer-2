@@ -66,3 +66,8 @@ console.log(employeeDetails);
 console.log();
 
 
+function helloWorld() {
+    console.log("Hello World!");
+}
+
+helloWorld();
